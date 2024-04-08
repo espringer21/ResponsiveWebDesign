@@ -1,0 +1,556 @@
+/*
+    COLOUR PALETTE
+
+ dark blue:   #084272;
+ light blue:  #E5F5FA;
+ medium blue: #005FAA;
+ light grey:  #F5F5F5;
+ green:       #6ba23f;
+
+*/
+:root{
+    --dark-blue:   #084272;
+    --light-blue:  #E5F5FA;
+    --medium-blue: #005FAA;
+    --light-grey:  #F5F5F5;
+    --green:       #6ba23f;
+}
+body{
+    font-family: Calibri, sans-serif;
+}
+h1{
+    display: flex;
+    font-size: 2.25rem;
+    text-transform: uppercase;
+    justify-content: center;
+}
+p{
+    font-size: 1.125rem;
+}
+h3{
+    font-size: 2.125rem;
+    color: var(--light-blue);
+    margin: 0;
+}
+/* Header & Footer */
+
+.nav-start ul{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    text-align: center;
+}
+.nav-start ul li {
+    width: calc(100% / 4 - 0.125rem);
+    text-transform: uppercase;
+    background-color: var(--dark-blue);
+    display: flex;
+}
+.nav-start ul li a{
+    text-decoration: none;
+    color: var(--light-blue);
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+    padding: 0.5rem;
+}
+.nav-start ul li a:hover{
+    background-color: var(--light-blue);
+    color: var(--dark-blue);
+}
+.nav-start ul li a:active{
+    background-color: var(--green);
+    color: #fff;
+}
+.nav-flex ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.nav-flex ul li{
+    width: calc(100% / 2);
+    text-align: center;
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+.nav-flex ul li a:hover{
+    color: var(--green);
+    text-decoration: underline;
+}
+.nav-flex ul li a{
+    text-decoration: none;
+    color: var(--dark-blue);
+    transition: all 0.3s ease-in-out;
+}
+
+h1 a{
+    text-decoration: none;
+    color: var(--dark-blue);
+    transition: all 0.3s ease-in-out;
+}
+.copyright{
+    background-color: var(--light-blue);
+    padding: 1rem;
+}
+.footer-links ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.footer-links ul a{
+    text-decoration: none;
+    color: var(--dark-blue);
+    margin-right: 2rem;
+    transition: all 0.3s ease-in-out;
+}
+.footer-links ul a:hover{
+    color: var(--green);
+}
+/* community html */
+.hero-bkgd{
+  background: url(../img/streetview-s.webp) center / cover no-repeat ; 
+  height: 20rem;
+}
+.product-info{
+    padding:1rem;
+}
+.product-info h2{
+    font-size: 1.875rem;
+    display: flex;
+    justify-content: center;
+    color: black;
+    margin-top: 3rem;
+}
+.product-info p{
+    font-size: 1.125rem;
+    justify-content: center;
+    margin: 1rem;
+}
+.bold{
+    font-weight: bold;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.container-com{
+    padding: 1rem;
+}
+.card{
+    display: flex;
+    flex-flow: column;
+    margin-top: 2rem;
+    color: var(--light-blue);
+}
+.card > *{
+    min-width: 50%;
+}
+.title{
+    padding: 1rem;
+    background-color: var(--dark-blue); 
+}
+
+.card-bg{
+    min-height: 10rem;
+}
+
+.card:nth-of-type(1) .card-bg{
+    background: url(../img/bluehatonheater.webp) center /cover no-repeat ;
+}
+.card:nth-of-type(2) .card-bg{
+    background: url(../img/discovery.webp) center /cover no-repeat ;
+}
+.card:nth-of-type(3) .card-bg{
+    background: url(../img/workonbed.webp) center /cover no-repeat ;
+}
+
+.footer-bkgd{
+    background: url(../img/apartments-s.webp);
+    padding: 1rem;
+    margin-top: 3rem;
+}
+.white-box{
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 2rem;
+}
+.white-box h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.875rem;
+}
+.white-box a{
+    text-decoration: none;
+    color: var(--medium-blue);
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+/* your-home html*/
+.hero-home{
+    background: url(../img/homeview-s.webp) center / cover no-repeat ; 
+    height: 20rem;
+}
+.card-home:nth-of-type(1) .card-bg-home{
+    background: url(../img/payment.webp) center /cover no-repeat ;
+}
+.card-home:nth-of-type(2) .card-bg-home{
+    background: url(../img/livingspace.webp) center /cover no-repeat ;
+}
+.card-home:nth-of-type(3) .card-bg-home{
+    background: url(../img/coffeewalk.webp) center /cover no-repeat ;
+}
+.card-home:nth-of-type(4) .card-bg-home{
+    background: url(../img/house-meter.webp) center /cover no-repeat ;
+}
+.card-home:nth-of-type(5) .card-bg-home{
+    background: url(../img/mixedfamily.webp) center /cover no-repeat ;
+}
+.card-home:nth-of-type(6) .card-bg-home{
+    background: url(../img/workplans.webp) center /cover no-repeat;
+}
+.card-home{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    margin-top: 2rem;
+    color: var(--light-blue);
+    width: calc(100% / 2 - 0.5rem);
+}
+.card-bg-home{
+    min-height: 10rem;
+}
+.top-info,
+.bttm-info{
+    padding: 2rem;
+    padding-bottom: 0;
+    display: flex;
+    flex-flow: column;
+}
+
+.top-info img,
+.bttm-info img{
+    width: 100%;
+}
+.top-info h2,
+.bttm-info h2{
+    text-transform: uppercase;
+    text-align: center;
+}
+.top-info a,
+.bttm-info a{
+    text-decoration: none;
+    color: var(--dark-blue);
+    transition: all 0.3s ease-in-out;
+}
+.top-info a:hover,
+.bttm-info a:hover{
+    color: var(--green);
+}
+.add-help{
+    background-color: var(--light-grey);
+    padding: 2rem;  
+    margin-top: 3rem;  
+}
+.add-help h2{
+    text-align: center;
+}
+.add-help ul{
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    justify-content: center;
+}
+.add-help ul li{
+    background-color:#fff;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border: 0.3rem solid var(--light-grey) ;
+}
+.add-help ul li a{
+    text-decoration: none;
+    color: var(--dark-blue);
+    transition: all 0.3s ease-in-out;
+}
+.add-help ul li a:hover{
+    color: var(--green);
+}
+.add-help ul li p{
+    text-transform: uppercase;
+}
+
+
+/* home html */
+.hero{
+    background: url(../img/windmillview-s.webp) center / cover no-repeat;
+    height: 20rem;
+    padding: 2rem;
+}
+.hero h2{
+    color: var(--light-grey);
+    font-size: 1.875rem;
+    display: flex;
+    justify-content: flex-end;
+}
+.another-nav{
+    background-color: var(--light-blue);
+}
+.another-nav ul { 
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1rem;
+}
+.another-nav a{
+    text-decoration: none;
+    color: var(--dark-blue);
+    display: block;
+    padding: 1rem;
+    
+}
+.another-nav li{
+    text-align: center;
+    background-color: var(--light-grey);
+    font-size: 1.125rem;
+    border: rgba(128, 128, 128, 0.141) 0.125rem solid;
+    width: calc(100% / 2 - 2rem);
+    margin-top: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+.another-nav a:hover{
+    color: var(--light-grey);
+}
+.another-nav li:hover{
+    background-color: var(--dark-blue);
+}
+
+
+.energy-stats, 
+aside{
+    display: flex;
+    flex-flow: column;
+    align-items:center;
+    justify-content: center;
+    padding: 2rem;
+
+}
+.energy-stats a, 
+aside a{
+    font-size: 1.1245rem;
+    color: var(--light-blue);
+    text-decoration: none;
+    background-color: var(--dark-blue);
+    margin-top: 1rem;
+    padding: 0.9rem;
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+    text-align: center;
+}
+.energy-stats a:hover, 
+aside a:hover{
+    background-color: var(--light-blue);
+    border: 1px solid var(--dark-blue);
+    color: var(--dark-blue);
+}
+.order-new a,
+.new-order a{
+   display: block;
+   margin-top: 2rem;
+}
+
+/* MOBILE LAYOUT */
+
+
+
+/* MEDIA QUERIES */
+@media screen and (min-width:800px) {
+    /* header md view */
+    .nav-flex{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .nav-flex ul{
+        flex-wrap: unset;
+    }
+    .nav-flex ul li{
+        width: unset;
+        margin: 0.5rem;
+    }
+    /* main md view */
+    .card,
+    .card-home {
+        flex-flow: column;
+        width: calc(100% / 3 - 0.5rem);
+    }
+    .container,
+    .container-com{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .container h2{
+        order: -1;
+    }
+
+    h2{
+        width: 100%;
+    }
+    .card-home,
+    .card > *{
+        min-width: unset;
+    }
+    .title{
+        order:1;
+    }
+    
+    /* footer md view */
+    .copyright{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .white-box{
+        max-width: 43.75rem ;
+        margin: auto;
+    }
+
+    /* home html md view */
+
+    .large-view{
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem;
+
+    }
+    .energy-stats{
+        display: inline-block;
+        text-align: center;
+        border: rgba(128, 128, 128, 0.141) 0.125rem solid;
+        justify-content: flex-start;
+        width: 40%;
+        
+    }
+    aside{
+        display: inline-block;
+        text-align: center;
+        border: rgba(128, 128, 128, 0.141) 0.125rem solid;
+        background-color: var(--light-grey);
+        width: 57%;
+    }
+    .another-nav li{
+        width: calc(100% / 3 - 3rem);
+        margin-top: 1rem;
+        padding: 1rem;
+    }
+    .hero{
+        background: url(../img/windmillview-m.webp) center / cover no-repeat;
+        height: 20rem;
+        padding: 2rem;
+    }
+
+    /* your home md view */
+    .new-order{
+        display: flex;
+    }
+    .new-order img{
+        width: 50%;
+        margin-right: 2rem;
+    }  
+    .add-help ul{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .add-help ul li{
+        width: calc(100% / 3 - 3rem);
+    }
+    .order-new{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .order-new img{
+        width: 50%;
+        margin-left: 2rem;
+    }
+    .order-new a,
+    .new-order a{
+       display: block;
+       margin-top: 2rem;
+    }
+    
+    .hero-home{
+        background: url(../img/homeview-m.webp) center / cover no-repeat ; 
+        height: 20rem;
+    }
+    /* community */
+    .hero-bkgd{
+        background: url(../img/streetview-m.webp) center / cover no-repeat ; 
+        height: 20rem;
+    }
+    .footer-bkgd{
+        background: url(../img/apartments-m.webp);
+    }
+}
+@media screen and (min-width:1200px){
+    
+    footer p,
+    footer a,
+    .product-info,
+    .container-com,
+    .nav-flex,
+    .footer-links,
+    .nav-start nav,
+    .container,
+    .top-info,
+    .bttm-info,
+    .add-help ul,
+    .hero h2,
+    .another-nav ul,
+    .large-view{
+        max-width: 75rem;
+        margin: auto;
+    }
+    .nav-start nav{
+        justify-content: end;
+    }
+    .white-box{
+        margin-left: 40rem;
+    }
+    .another-nav ul li{
+        width: calc(100% / 6 - 1rem);
+        padding: 0;
+    }
+    .nav-start{
+        background-color: var(--dark-blue);
+    }
+    .nav-start ul{
+        background-color: #fff;
+        margin-left: 40rem;
+    }
+    .nav-flex{
+        justify-content: space-between;
+    }
+    .add-help ul li a{
+        margin-top: 1rem;
+    }
+    /* community */
+    .hero-bkgd{
+        background: url(../img/streetview-l.webp) center / cover no-repeat ; 
+        height: 20rem;
+    }
+    .footer-bkgd{
+        background: url(../img/apartments-l.webp);
+    }
+    /* your-home html*/
+    .hero-home{
+        background: url(../img/homeview-l.webp) center / cover no-repeat ; 
+        height: 20rem;
+    }
+    /* Home */
+    .hero{
+        background: url(../img/windmillview-l.webp) center / cover no-repeat;
+        height: 20rem;
+        padding: 2rem;
+    }
+}
