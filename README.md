@@ -1,4 +1,4 @@
-# ResponsiveWebDesign
+# Responsive Web Design
 
 I've worked on several key skills essential for web development,
 
