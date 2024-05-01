@@ -6,5 +6,7 @@ Firstly, I can confidently create well-structured HTML markup and write efficien
 
 
 # Projects 
-1. [Cultivate](Cultivate/README.md) - a intro to working with Bootstrap
+1. [Cultivate](Cultivate/README.md)
+2. [Simply Sustainable](SimplySustainable/README.md)
+3. [XYZ Homes](XYZHomes/README.md)
 
