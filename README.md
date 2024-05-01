@@ -7,7 +7,4 @@ Firstly, I can confidently create well-structured HTML markup and write efficien
 
 # Projects 
 1. Cultivate - a intro to working with Bootstrap
-  
-  ![cultivate Screenshot1](https://github.com/espringer21/ResponsiveWebDesign/assets/122303245/620848ef-dc5e-40f8-8ffd-92bc27436957)
-  ![cultivate Screenshot2](https://github.com/espringer21/ResponsiveWebDesign/assets/122303245/2cdf13f8-a52f-41ee-855e-dcee02dbf70e)
 
